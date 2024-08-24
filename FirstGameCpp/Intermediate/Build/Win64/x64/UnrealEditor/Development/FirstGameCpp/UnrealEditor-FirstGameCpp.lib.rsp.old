@@ -1,0 +1,17 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-FirstGameCpp.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Unreal\Sy_Unreal_Project\FirstGameCpp\Intermediate\Build\Win64\x64\FirstGameCppEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"D:\Unreal\Sy_Unreal_Project\FirstGameCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGameCpp\FirstGameCpp.init.gen.cpp.obj"
+"D:\Unreal\Sy_Unreal_Project\FirstGameCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGameCpp\MainCharacter.gen.cpp.obj"
+"D:\Unreal\Sy_Unreal_Project\FirstGameCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGameCpp\MyPlayerController.gen.cpp.obj"
+"D:\Unreal\Sy_Unreal_Project\FirstGameCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGameCpp\FirstGameCpp.cpp.obj"
+"D:\Unreal\Sy_Unreal_Project\FirstGameCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGameCpp\MainCharacter.cpp.obj"
+"D:\Unreal\Sy_Unreal_Project\FirstGameCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGameCpp\MyPlayerController.cpp.obj"
+"D:\Unreal\Sy_Unreal_Project\FirstGameCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGameCpp\Default.rc2.res"
+/OUT:"D:\Unreal\Sy_Unreal_Project\FirstGameCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGameCpp\UnrealEditor-FirstGameCpp.lib"

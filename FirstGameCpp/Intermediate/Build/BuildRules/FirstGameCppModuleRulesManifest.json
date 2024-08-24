@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Unreal\\Sy_Unreal_Project\\FirstGameCpp\\Source\\FirstGameCpp\\FirstGameCpp.Build.cs",
+		"D:\\Unreal\\Sy_Unreal_Project\\FirstGameCpp\\Source\\FirstGameCpp.Target.cs",
+		"D:\\Unreal\\Sy_Unreal_Project\\FirstGameCpp\\Source\\FirstGameCppEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}

@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal\\sy_unreal_project\\firstgamecpp\\source\\firstgamecpp\\myplayercontroller.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal\\sy_unreal_project\\firstgamecpp\\intermediate\\build\\win64\\x64\\firstgamecppeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "d:\\unreal\\sy_unreal_project\\firstgamecpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\firstgamecpp\\definitions.firstgamecpp.h",
+            "d:\\unreal\\sy_unreal_project\\firstgamecpp\\source\\firstgamecpp\\myplayercontroller.h",
+            "d:\\unreal\\sy_unreal_project\\firstgamecpp\\intermediate\\build\\win64\\unrealeditor\\inc\\firstgamecpp\\uht\\myplayercontroller.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
