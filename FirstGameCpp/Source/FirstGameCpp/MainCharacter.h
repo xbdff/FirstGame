@@ -46,7 +46,22 @@ public:
 	UPROPERTY(EditInstanceOnly,Category = "Basic Config")
 	bool IsMoving = false;
 
+	UPROPERTY(EditInstanceOnly,Category = "Basic Config")
+	UAnimSequence* AnimSequence;
+
+
+	//Õ¾Á¢´ý»ú
+	FString Idle = TEXT("/Script/Engine.AnimSequence'/Game/Characters/Mannequins/Animations/Manny/MM_Idle.MM_Idle'");
+	//ÅÜ²½
+	FString Jog = TEXT("/Script/Engine.AnimSequence'/Game/Characters/Mannequins/Animations/Manny/MM_Run_Fwd.MM_Run_Fwd'");
+	//ÌøÔ¾
+	FString JumpAnim = TEXT("/Script/Engine.AnimSequence'/Game/Characters/Mannequins/Animations/Manny/MM_Jump.MM_Jump'");
+	FString JumpLoopAnim = TEXT("/Script/Engine.AnimSequence'/Game/Characters/Mannequins/Animations/Manny/MM_Land.MM_Land'");
 	
+	void AnimPlay(FString Value, bool loop = false);
+
+	FString GetPlayingAnimName();
+
 	void ThirdPerson();
 
 private:

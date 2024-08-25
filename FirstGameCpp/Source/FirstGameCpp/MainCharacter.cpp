@@ -21,6 +21,9 @@ void AMainCharacter::Construct()
 	SkeletalMesh = LoadObject < USkeletalMesh>(NULL,  TEXT("/Script/Engine.SkeletalMesh'/Game/SCK_Casual01/Models/Premade_Characters/MESH_PC_03.MESH_PC_03'"));
 	SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComponent"));
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComponent"));
+	GetCharacterMovement()->bOrientRotationToMovement = true;
+	GetCharacterMovement()->JumpZVelocity = 1200;
+	GetCharacterMovement()->GravityScale = 2;
 }
 
 void AMainCharacter::CreateModel()
@@ -36,7 +39,7 @@ void AMainCharacter::CreateModel()
 void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	this->AnimPlay(Idle,true);
 }
 
 // Called every frame
@@ -67,4 +70,17 @@ void AMainCharacter::ThirdPerson()
 	CameraComponent->SetupAttachment(SpringArmComponent);
 	CameraComponent->SetRelativeLocation(FVector::ZeroVector);
 	CameraComponent->bUsePawnControlRotation = false;
+}
+
+void AMainCharacter::AnimPlay(FString Value, bool loop )
+{
+	AnimSequence = LoadObject<UAnimSequence>(NULL, *Value);
+	GetMesh()->SetAnimationMode(EAnimationMode::AnimationSingleNode);
+	GetMesh()->SetAnimation(AnimSequence);
+	GetMesh()->Play(loop);
+}
+
+FString AMainCharacter::GetPlayingAnimName()
+{
+	return AnimSequence->GetPathName();
 }

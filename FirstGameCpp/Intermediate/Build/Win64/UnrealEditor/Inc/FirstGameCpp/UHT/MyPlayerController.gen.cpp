@@ -30,6 +30,21 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayerController() {}
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_IsJumpCouldPlay_MetaData[];
+#endif
+		static void NewProp_IsJumpCouldPlay_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_IsJumpCouldPlay;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_IsJogCouldPlay_MetaData[];
+#endif
+		static void NewProp_IsJogCouldPlay_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_IsJogCouldPlay;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_IsIdleCouldPlay_MetaData[];
+#endif
+		static void NewProp_IsIdleCouldPlay_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_IsIdleCouldPlay;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_Main_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_Main;
@@ -61,6 +76,39 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayerController() {}
 	};
 #endif
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJumpCouldPlay_MetaData[] = {
+		{ "Category", "Basic Config" },
+		{ "ModuleRelativePath", "MyPlayerController.h" },
+	};
+#endif
+	void Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJumpCouldPlay_SetBit(void* Obj)
+	{
+		((AMyPlayerController*)Obj)->IsJumpCouldPlay = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJumpCouldPlay = { "IsJumpCouldPlay", nullptr, (EPropertyFlags)0x0010000000000801, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AMyPlayerController), &Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJumpCouldPlay_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJumpCouldPlay_MetaData), Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJumpCouldPlay_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJogCouldPlay_MetaData[] = {
+		{ "Category", "Basic Config" },
+		{ "ModuleRelativePath", "MyPlayerController.h" },
+	};
+#endif
+	void Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJogCouldPlay_SetBit(void* Obj)
+	{
+		((AMyPlayerController*)Obj)->IsJogCouldPlay = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJogCouldPlay = { "IsJogCouldPlay", nullptr, (EPropertyFlags)0x0010000000000801, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AMyPlayerController), &Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJogCouldPlay_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJogCouldPlay_MetaData), Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJogCouldPlay_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsIdleCouldPlay_MetaData[] = {
+		{ "Category", "Basic Config" },
+		{ "ModuleRelativePath", "MyPlayerController.h" },
+	};
+#endif
+	void Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsIdleCouldPlay_SetBit(void* Obj)
+	{
+		((AMyPlayerController*)Obj)->IsIdleCouldPlay = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsIdleCouldPlay = { "IsIdleCouldPlay", nullptr, (EPropertyFlags)0x0010000000000801, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AMyPlayerController), &Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsIdleCouldPlay_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsIdleCouldPlay_MetaData), Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsIdleCouldPlay_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPlayerController_Statics::NewProp_Main_MetaData[] = {
 		{ "Category", "Basic Config" },
 		{ "ModuleRelativePath", "MyPlayerController.h" },
@@ -82,6 +130,9 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayerController() {}
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMyPlayerController_Statics::NewProp_RightValue = { "RightValue", nullptr, (EPropertyFlags)0x0010000000000801, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMyPlayerController, RightValue), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayerController_Statics::NewProp_RightValue_MetaData), Z_Construct_UClass_AMyPlayerController_Statics::NewProp_RightValue_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyPlayerController_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJumpCouldPlay,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsJogCouldPlay,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayerController_Statics::NewProp_IsIdleCouldPlay,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayerController_Statics::NewProp_Main,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayerController_Statics::NewProp_ForwardValue,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayerController_Statics::NewProp_RightValue,
@@ -124,9 +175,9 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayerController() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Sy_Unreal_Project_FirstGameCpp_Source_FirstGameCpp_MyPlayerController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMyPlayerController, AMyPlayerController::StaticClass, TEXT("AMyPlayerController"), &Z_Registration_Info_UClass_AMyPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMyPlayerController), 654527615U) },
+		{ Z_Construct_UClass_AMyPlayerController, AMyPlayerController::StaticClass, TEXT("AMyPlayerController"), &Z_Registration_Info_UClass_AMyPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMyPlayerController), 1360728686U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Sy_Unreal_Project_FirstGameCpp_Source_FirstGameCpp_MyPlayerController_h_2999190104(TEXT("/Script/FirstGameCpp"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Sy_Unreal_Project_FirstGameCpp_Source_FirstGameCpp_MyPlayerController_h_2472234755(TEXT("/Script/FirstGameCpp"),
 		Z_CompiledInDeferFile_FID_Sy_Unreal_Project_FirstGameCpp_Source_FirstGameCpp_MyPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Sy_Unreal_Project_FirstGameCpp_Source_FirstGameCpp_MyPlayerController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -29,6 +29,12 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupInputComponent() override;
+	UPROPERTY(EditInstanceOnly,Category = "Basic Config")
+	bool IsJumpCouldPlay = true;
+	UPROPERTY(EditInstanceOnly,Category = "Basic Config")
+	bool IsJogCouldPlay = true;
+	UPROPERTY(EditInstanceOnly,Category = "Basic Config")
+	bool IsIdleCouldPlay = true;
 
 	UPROPERTY(EditInstanceOnly,Category = "Basic Config")
 	AMainCharacter* Main;
@@ -38,11 +44,12 @@ public:
 
 	UPROPERTY(EditInstanceOnly,Category = "Basic Config")
 	float RightValue;
-
+ 
 private:
 	void Construct();
 	void MoveForward(float Value);
 	void MoveRight(float Value);
 	void Jump();
 	void StopJumping();
+	void MoveAnimSwitch();
 };
