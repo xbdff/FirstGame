@@ -1,0 +1,3 @@
+[submodule "ParticlePlugins"]
+	path = ParticlePlugins
+	url = git@github.com:xbdff/ParticlePlugins.git
